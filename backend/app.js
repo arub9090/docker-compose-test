@@ -85,7 +85,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 
-const uri = `mongodb://${process.env.mongo_user_name}:${process.env.mongo_pass}@mongocontnew:27017/` +
+const uri = `mongodb://${process.env.mongo_user_name}:${process.env.mongo_pass}@mongodb:27017/` +
   'course-goals?authSource=admin';
 
 mongoose.connect(uri, {
@@ -99,7 +99,7 @@ mongoose.connect(uri, {
       console.error(err);
     } else {
       console.log('CONNECTED TO MONGODB By ARIF!');
-      console.log("This is ARIF from Backend new ok fine!");
+      console.log("This is ARIF from Backend Compose now!");
       app.listen(80);
     }
   }
